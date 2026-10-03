@@ -1,0 +1,151 @@
+#creating the student class
+class Student:
+  def __init__(self, name, student_id, programme):
+    self.name = name
+    self.student_id = student_id
+    self.programme = programme
+    #creating student objects
+student = Student(
+    "Hezron Limo",
+    "BDSA/ON/0565/01/26",
+    "DATA SCIENCE AND ANALYTICS"
+)
+print("Two Student objects have been created successfully. ")
+#adding the display details() instance method
+class Student:
+  university = "Kabarak University"
+
+  def __init__(self, name, student_id, programme):
+    self.name = name
+    self.student_id = student_id
+    self.programme = programme
+
+  def display_details(self):
+    print("Name: ", self.name)
+    print("Student ID: ", self.student_id)
+    print("Programme: ", self.programme)
+    print("University: ", Student.university)
+
+  def change_programme(self, new_programme):
+    self.programme = new_programme
+
+  @classmethod
+  def change_university(cls, new_university):
+    cls.university = new_university
+
+  @staticmethod
+  def is_valid_id(student_id):
+    return len(student_id) >= 5
+    student1 = Student(
+    "Hezron Limo",
+    "BDSA/ON/0565/01/26",
+    "DATA SCIENCE AND ANALYTICS"
+)
+student2 = Student(
+    "Claudine Nasimiyu",
+    "BDSA/ON/0643/01/26",
+    "DATA SCIENCE AND ANALYTICS"
+)
+print("Student 1 Details")
+student1.display_details()
+
+print("\nStudent 2 Details")
+student2.display_details()
+#adding the class variable university
+class Student:
+  university = "Kabarak University"
+  def __init__(self, name, student_id, programme):
+    self.name = name
+    self.student_id = student_id
+    self.programme = programme
+
+  def display_details(self):
+    print("Name: ", self.name)
+    print("Student ID: ", self.student_id)
+    print("Programme: ", self.programme)
+    print("University: ", Student.university)
+
+  def change_programme(self, new_programme):
+    self.programme = new_programme
+    student1 = Student(
+    "Hezron Limo",
+    "BDSA/ON/0565/01/26",
+    "DATA SCIENCE AND ANALYTICS"
+)
+student2 = Student(
+    "Claudine Nasimiyu",
+    "BDSA/ON/0643/01/26",
+    "DATA SCIENCE AND ANALYTICS"
+)
+print("Student 1:")
+student1.display_details()
+
+print("\nStudent 2:")
+student2.display_details()
+#adding the change_university() class method
+class Student:
+  university = "Kabarak University"
+  def __init__(self, name, student_id, programme):
+    self.name = name
+    self.student_id = student_id
+    self.programme = programme
+
+  def display_details(self):
+    print("Name: ", self.name)
+    print("Student ID: ", self.student_id)
+    print("Programme: ", self.programme)
+    print("University: ", Student.university)
+
+  def change_programme(self, new_programme):
+    self.programme = new_programme
+
+  @classmethod
+  def change_university(cls, new_university):
+    cls.university = new_university
+    print("University before the change:") 
+print(student1.university) 
+print(student2.university) 
+
+Student.change_university("Kabarak International University") 
+
+print("\nUniversity after the change:") 
+print(student1.university) 
+print(student2.university)
+#demonstrating the effect of the class method
+print("Updated Stuudent 1 Details")
+student1.display_details()
+
+print("\nUpdated Student 2 Details")
+student2.display_details()
+#adding the is_valid_id() static method
+class Student:
+  university = "Kabarak University"
+
+  def __init__(self, name, student_id, programme):
+    self.name = name
+    self.student_id = student_id
+    self.programme = programme
+
+  def displaudent ID: ", self.student_id)
+    print("Programme: ", self.programme)
+    print("University: ", Student.university)
+y_details(self):
+    print("Name: ", self.name)
+    print("St
+  def change_programme(self, new_programme):
+    self.programme = new_programme
+
+  @classmethod
+  def change_university(cls, new_university):
+    cls.university = new_university
+
+  @staticmethod
+  def is_valid_id(student_id):
+    return len(student_id) >= 5
+    print("STUDENT ID VALIDATION")
+print(f"Is BDSA/2012 valid? {Student.is_valid_id('BDSA/2012')}")
+print(f"Is bds valid? {Student.is_valid_id('bds')}")
+
+assert Student.is_valid_id("BDSA/2012") is True
+assert Student.is_valid_id("bds") is False
+print("\nStudent ID validation tests passed.")
